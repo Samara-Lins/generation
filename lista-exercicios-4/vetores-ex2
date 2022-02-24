@@ -1,0 +1,22 @@
+programa
+{
+	inclua biblioteca Util
+	funcao inicio()
+	{
+		inteiro lancamentos[10]
+		inteiro cont = 0,media,ocorrenciasMaior = 0,maior = 0,soma = 0
+		faca { 
+			lancamentos[cont] = Util.sorteia(1, 6)
+			soma += lancamentos[cont]
+			se (lancamentos[cont] > maior) {maior = lancamentos[cont]}
+			escreva(cont+1,"° lançamento: ",lancamentos[cont],"\n")
+			cont ++
+		} enquanto (cont < 10)
+		para(cont = 0;cont < 10;cont ++)
+			se (lancamentos[cont] == maior) {ocorrenciasMaior ++}
+		escreva("A soma correspondente ao total de lançamentos é ",soma)
+		media = soma / 10
+		escreva("\nA média aritmética dos lançamentos é ",media)
+		escreva("\nNúmero de ocorrências do maior lançamento: ",ocorrenciasMaior)
+	}
+}

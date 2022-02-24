@@ -1,0 +1,16 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro pontos[5]
+		inteiro cont = 0, maior = 0
+		faca {
+			escreva("Pontuação [",cont+1,"]: ")
+			leia(pontos[cont])
+			se (pontos[cont] > maior) {maior = pontos[cont]}
+			cont++
+		} enquanto (cont < 5)
+		escreva("A maior pontuação foi de ",maior," pontos.")
+	}
+}
