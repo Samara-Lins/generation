@@ -1,0 +1,14 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro cont = 233
+		faca {
+			escreva(cont," -> ")
+			se (cont == 452) {escreva("FIM DA CONTAGEM")}
+			se (cont >= 300 e cont <= 400) {cont += 3}
+			senao {cont += 5}
+		} enquanto (cont >= 233 e cont <= 456)
+	}
+}

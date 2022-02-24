@@ -1,0 +1,29 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real salario,ss = 0.0,maior = 0.0,percentual
+		inteiro filhos,sf = 0,mf,ate100 = 0,ms,cont
+		para (cont = 0;cont<=20;cont++){
+			escreva("Qual o seu salário? ")
+			leia(salario)
+			escreva("Quantos filhos você tem? ")
+			leia(filhos)
+			ss += salario
+			sf += filhos
+			se (salario <= 100) {
+				ate100++}
+			se (salario > maior) {
+				maior = salario}
+			escreva("Cadastro bem sucedido.\n-------------------------\n")
+		}
+		ms = ss/20
+		mf = sf/20
+		percentual = ate100/20 * 100
+		escreva("A média do salário da população é ",ms)
+		escreva("\nA média de filhos da população é ",mf)
+		escreva("\nO maior salário é de R$",maior)
+		escreva("\n",percentual,"% da população ganha até R$100,00")
+	}
+}

@@ -1,0 +1,15 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero,cont = 0,soma = 0
+		escreva("Digite um número: ")
+		leia(numero)
+		faca {
+			cont++
+			soma += cont
+		} enquanto (cont < numero)
+		escreva("A soma de todos os números de 0 a ",numero," é ",soma)
+	}
+}

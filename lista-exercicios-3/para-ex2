@@ -1,0 +1,12 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro cont,impares,multiplos3,soma = 0
+		para (cont = 1; cont <= 500; cont++) {
+			se (cont % 2 == 1 e cont % 3 == 0) {soma += cont}
+		}
+		escreva("A soma dos números ímpares múltiplos de 3, de 1 a 500, é igual a ",soma)
+	}
+}
