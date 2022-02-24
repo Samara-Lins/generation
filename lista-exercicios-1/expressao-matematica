@@ -1,0 +1,22 @@
+programa
+{
+	inclua biblioteca Matematica
+	funcao inicio()
+	{
+		inteiro A,B,C,R,S
+		real D
+		escreva("Considere a seguinte expressão: D = R+S/2, em que:\n")
+		escreva("R = (A + B)²\n")
+		escreva("S = (B + C)²\n")
+		escreva("Insira o valor de A: ")
+		leia(A)
+		escreva("Insira o valor de B: ")
+		leia(B)
+		escreva("Insira o valor de C: ")
+		leia(C)
+		R = Matematica.potencia((A + B),2)
+		S = Matematica.potencia((C + B),2)
+		D = (R + S) / 2
+		escreva("Valor de D: ",D)
+	}
+}

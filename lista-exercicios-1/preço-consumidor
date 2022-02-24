@@ -1,0 +1,12 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real cf, cc
+		escreva("Custo de fábrica: ")
+		leia(cf)
+		cc = cf + (cf * 0.28) + (cf * 0.45)
+		escreva("O preço ao consumidor será de R$",cc,"0")
+	}
+}

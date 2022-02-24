@@ -1,0 +1,27 @@
+programa
+{
+	inclua biblioteca Calendario
+	
+	funcao inicio()
+	{
+		inteiro dia,mes,ano,idadeAnos,idadeMeses,idadeDias,dias,idadeEscrita
+		escreva("Em que dia você nasceu? ")
+		leia(dia)
+		escreva("De que mês? ")
+		leia(mes)
+		escreva("E em que ano? ")
+		leia(ano)
+		idadeAnos = Calendario.ano_atual() - ano - 1
+		se(Calendario.mes_atual() < mes) {
+			idadeMeses = Calendario.mes_atual() - mes + 12 - 1
+		}
+		senao{ idadeMeses = Calendario.mes_atual() - mes - 1}
+		dias = 30 - mes + Calendario.dia_mes_atual()
+		se (dias >= 30) {
+			idadeDias = dias - 30 }
+		senao {idadeDias = dias}
+		idadeEscrita = idadeAnos * 365 + idadeMeses * 30 + idadeDias
+		escreva("Você tem " + idadeEscrita + " dias de idade.")
+		
+	}
+}

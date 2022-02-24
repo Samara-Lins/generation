@@ -1,0 +1,24 @@
+programa
+{
+	inclua biblioteca Matematica
+	funcao inicio()
+	{
+		escreva("Dados dois pontos quaisquer no plano, P(x1,y1) e Q(x2,y2), e dado que a distância entre dois pontos é definida pela fórmula _/(x2 - x1)² + (y2 - y1)²...")
+		real x1,x2,y1,y2,t1,t2,resultado
+		escreva("\nValor de x1:")
+		leia(x1)
+		escreva("Valor de y1:")
+		leia(y1)
+		escreva("Valor de x2:")
+		leia(x2)
+		escreva("Valor de y2:")
+		leia(y2)
+		t1 = Matematica.potencia((x2 - x1),2)
+		t2 = Matematica.potencia((y2 - y1),2)
+		resultado = Matematica.raiz((t1 + t2),2)
+		escreva("Distância entre P e Q: ",resultado)
+
+
+
+	}
+}

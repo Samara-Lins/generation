@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		escreva("Considerando o sistema de equações lineares ax + by = c; dx + ey = f, que pode ser resolvido segundo as fórmulas x = (ce - bf)/(ae - bd) e y = (af - cd)/(ae - bd):\n")
+		inteiro A,B,C,D,E,F,x,y
+		escreva("Defina o valor de A: ")
+		leia(A)
+		escreva("Defina o valor de B: ")
+		leia(B)
+		escreva("Defina o valor de C: ")
+		leia(C)
+		escreva("Defina o valor de D: ")
+		leia(D)
+		escreva("Defina o valor de E: ")
+		leia(E)
+		escreva("Defina o valor de F: ")
+		leia(F)
+		x = (C*E - B*F)/(A*E - B*D)
+		y = (A*F - C*D)/(A*E - B*D)
+		escreva("O valor de x para esses valores é ",x)
+		escreva("\nO valor de y para esses valores é ",y)
+		
+	}
+}

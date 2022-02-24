@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real nota1,nota2,nota3,peso1,peso2,peso3,media
+		escreva("Primeira nota: ")
+		leia(nota1)
+		escreva("Segunda nota: ")
+		leia(nota2)
+		escreva("Terceira nota: ")
+		leia(nota3)
+		peso1 = 2 * nota1
+		peso2 = 3 * nota2
+		peso3 = 5 * nota3
+		media = (peso1 + peso2 + peso3)/10
+		escreva("A média do aluno foi ",media)
+	}
+}
