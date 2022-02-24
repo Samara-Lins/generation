@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real base,altura,area 
+		escreva("Base do triângulo: ")
+		leia(base)
+		escreva("Altura do triângulo: ")
+		leia(altura)
+		se (base > 0 e altura > 0) {
+			area = (base * altura)/2
+			escreva("Área do triângulo: ",area)
+		}
+		senao {escreva("Os valores de base e/ou altura informados não são válidos.")}
+	}
+}

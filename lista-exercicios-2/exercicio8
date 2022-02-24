@@ -1,0 +1,14 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real N
+		escreva("Insira o valor de N: ")
+		leia(N)
+		se (N > 100) {
+			escreva("N = ",N)
+		}
+		senao { escreva("N = 0") }
+	}
+}

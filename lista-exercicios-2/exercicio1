@@ -1,0 +1,15 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real P,E,M
+		escreva("Peso em tomates: ")
+		leia(P)
+		se (P > 50) {
+			E = P - 50
+			M = E * 4 
+			escreva("O excedente é igual a ",E,"kg, você será multado em R$",M) }
+		senao { escreva("O excedente é igual a ZERO, portanto você não será multado.")}	
+	}
+}

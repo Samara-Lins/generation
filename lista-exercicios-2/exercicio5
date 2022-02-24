@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real indice
+		escreva("Índice de poluição: ")
+		leia(indice)
+		se (indice >= 0.3 e indice < 0.4) {
+			escreva("Empresas intimadas a paralisar suas atividades:")
+			escreva("\n- GRUPO 1")
+		}
+		senao se (indice >= 0.4 e indice < 0.5) {
+			escreva("Empresas intimadas a paralisar suas atividades:")
+			escreva("\n- GRUPO 1\n- GRUPO 2")
+		}
+		senao se (indice >= 0.5) {
+			escreva("Empresas intimadas a paralisar suas atividades:")
+			escreva("\n- GRUPO 1\n- GRUPO 2\n- GRUPO 3")
+		}
+		senao { escreva("Nenhuma empresa de qualquer grupo será intimada.") }
+	}
+}

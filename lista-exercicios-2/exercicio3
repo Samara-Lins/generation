@@ -1,0 +1,27 @@
+programa
+{
+	inclua biblioteca Matematica
+	funcao inicio()
+	{
+		inteiro n1,n2,n3,n4,q1,q2,q3,q4
+		escreva("Primeiro número: ")
+		leia(n1)
+		escreva("Segundo número: ")
+		leia(n2)
+		escreva("Terceiro número: ")
+		leia(n3)
+		escreva("Quarto número: ")
+		leia(n4)
+		q1 = Matematica.potencia(n1,2)
+		q2 = Matematica.potencia(n2,2)
+		q3 = Matematica.potencia(n3,2)
+		q4 = Matematica.potencia(n4,2)
+		se (q3 >= 1000) { escreva("O quadrado de ",n3," é ",q3) }
+		senao {
+			escreva("O quadrado de ",n1," é ",q1)
+			escreva("\nO quadrado de ",n2," é ",q2)
+			escreva("\nO quadrado de ",n3," é ",q3)
+			escreva("\nO quadrado de ",n4," é ",q4)
+			}
+	}
+}

@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro C,N,E,SN,ST,SE
+		escreva("Código do operário: ")
+		leia(C)
+		escreva("Número de horas trabalhadas: ")
+		leia(N)
+		se (N > 50) {
+			E = N - 50
+			SN = 500}
+		senao {E = 0
+			SN = N * 10}
+		SE = E * 20
+		ST = SN + SE
+		escreva("O salário excedente a ser pago pelas horas extras é de R$",SE)
+		escreva("\nAssim, o salário total do operário ",C," é de R$",ST)
+	}
+}
