@@ -1,0 +1,13 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro idadeDias,idadeAnos,idadeMeses,diasRestantes
+		escreva("Quantos dias de idade você tem? ")
+		leia(idadeDias)
+		idadeAnos = idadeDias / 365
+		idadeMeses = (idadeDias % 365) / 30
+		diasRestantes = idadeMeses % 30
+		escreva("Você tem " + idadeAnos + " anos, " + idadeMeses + " meses e " + diasRestantes + " dias de idade.")
+	}
+}
